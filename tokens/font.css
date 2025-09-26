@@ -1,0 +1,114 @@
+/* 
+ * Modifiers
+ */
+@property ---font-size-modifier-sm {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.3;
+}
+@property ---font-size-modifier-lg {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.4;
+}
+
+/* 
+ * Font Family
+ */
+@property --font-family {
+  syntax: <family-name>#;
+  inherits: false;
+  initial-value: system-ui, sans-serif;
+}
+
+/* 
+ * Font Sizes
+ */
+@property --font-size-xs {
+  syntax: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | math;
+  inherits: false;
+  initial-value: 1rem;
+}
+
+@property --font-size-sm {
+  syntax: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | math;
+  inherits: false;
+  initial-value: 1.3rem;
+}
+
+@property --font-size-md {
+  syntax: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | math;
+  inherits: false;
+  initial-value: 1.6rem;
+}
+
+@property --font-size-lg {
+  syntax: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | math;
+  inherits: false;
+  initial-value: 2rem;
+}
+
+@property --font-size-xl {
+  syntax: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | math;
+  inherits: false;
+  initial-value: 2.4rem;
+}
+
+/* 
+ * Font Weights
+ */
+@property --font-weight-light {
+  syntax: <font-weight-absolute>{1,2};
+  inherits: false;
+  initial-value: 300;
+}
+@property --font-weight-regular {
+  syntax: <font-weight-absolute>{1,2};
+  inherits: false;
+  initial-value: 400;
+}
+@property --font-weight-bold {
+  syntax: <font-weight-absolute>{1,2};
+  inherits: false;
+  initial-value: 600;
+}
+
+/* 
+ * Line Heights
+ */
+@property --line-height-xs {
+  syntax: normal | <number> | <length> | <percentage>;
+  inherits: false;
+  initial-value: 0;
+}
+@property --line-height-sm {
+  syntax: normal | <number> | <length> | <percentage>;
+  inherits: false;
+  initial-value: 1.2;
+}
+@property --line-height-md {
+  syntax: normal | <number> | <length> | <percentage>;
+  inherits: false;
+  initial-value: 1.6;
+}
+@property --line-height-lg {
+  syntax: normal | <number> | <length> | <percentage>;
+  inherits: false;
+  initial-value: 1.8;
+}
+@property --line-height-xl {
+  syntax: normal | <number> | <length> | <percentage>;
+  inherits: false;
+  initial-value: 2;
+}
+
+/* ********************************************************************************************* */
+/* Applying Modified Values */
+/* ********************************************************************************************* */
+
+:root {
+  --font-size-xs: calc(var(--font-size-md) - (var(--font-size-modifier-sm) * 2));
+  --font-size-sm: calc(var(--font-size-md) - var(--font-size-modifier-sm));
+  --font-size-lg: calc(var(--font-size-md) + var(--font-size-modifier-md));
+  --font-size-xl: calc(var(--font-size-md) + (var(--font-size-modifier-md) * 2));
+}

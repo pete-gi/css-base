@@ -1,0 +1,35 @@
+@property --duration-xs {
+  syntax: <time>#;
+  inherits: false;
+  initial-value: 0.1s;
+}
+@property --duration-sm {
+  syntax: <time>#;
+  inherits: false;
+  initial-value: 0.2s;
+}
+@property --duration-md {
+  syntax: <time>#;
+  inherits: false;
+  initial-value: 0.3s;
+}
+@property --duration-lg {
+  syntax: <time>#;
+  inherits: false;
+  initial-value: 0.4s;
+}
+@property --duration-xl {
+  syntax: <time>#;
+  inherits: false;
+  initial-value: 0.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-xs: 0s;
+    --duration-sm: 0s;
+    --duration-md: 0s;
+    --duration-lg: 0s;
+    --duration-xl: 0s;
+  }
+}

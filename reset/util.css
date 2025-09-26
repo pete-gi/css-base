@@ -1,0 +1,34 @@
+@layer petegi-reset {
+  @media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+      navigation: auto;
+    }
+  }
+
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    block-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    inline-size: 1px;
+  }
+
+  :focus-visible {
+    outline-offset: 2px;
+  }
+
+  hr {
+    border-style: solid;
+    border-width: 1px 0 0;
+    color: inherit;
+    block-size: 0;
+    overflow: visible;
+    margin-block: 2.5rem;
+  }
+
+  :target {
+    scroll-margin: 3rlh;
+  }
+}

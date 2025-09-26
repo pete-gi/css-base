@@ -1,0 +1,62 @@
+@layer petegi-reset {
+  input,
+  select,
+  textarea,
+  button {
+    /* FUTURE: appearance: base; */
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    color: currentColor;
+  }
+
+  label {
+    display: block;
+  }
+
+  input:not(
+      :where(
+          [type="submit"],
+          [type="checkbox"],
+          [type="radio"],
+          [type="button"],
+          [type="reset"]
+        )
+    ) {
+    inline-size: 100%;
+  }
+
+  textarea {
+    field-sizing: content;
+    min-block-size: 5lh;
+    inline-size: 100%;
+    max-inline-size: 100%;
+  }
+
+  legend {
+    border: 0;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+    max-width: 100%;
+  }
+
+  [aria-disabled="true" i],
+  [disabled] {
+    cursor: not-allowed;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  [disabled],
+  label:has(input[disabled]) {
+    opacity: 0.5;
+
+    [disabled] {
+      opacity: 1;
+    }
+  }
+}

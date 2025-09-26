@@ -1,0 +1,15 @@
+@layer petegi-reset {
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: ui-monospace, SFMono-Regular, monospace;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    background: CanvasText;
+    color: Canvas;
+    padding: 1.5rem;
+  }
+}

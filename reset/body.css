@@ -1,0 +1,14 @@
+@layer petegi-reset {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100vh;
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-md);
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+}

@@ -1,0 +1,81 @@
+@layer petegi-reset {
+  /* Headings */
+  h1,
+  h2 {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: var(--line-height-sm);
+  }
+
+  /* FUTURE :heading */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+    margin-block-start: 0;
+  }
+
+  /* Paragraphs, List Items */
+  p,
+  li,
+  dd {
+    text-wrap: pretty;
+    max-inline-size: 88ch;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: var(--line-height-xs);
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sub {
+    inset-block-end: -0.25em;
+  }
+
+  sup {
+    inset-block-start: -0.5em;
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  b,
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Links */
+  a {
+    color: oklch(0.68 0.17 228);
+    text-underline-offset: 2px;
+    &:not(:is(:hover, :focus)) {
+      text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
+    }
+  }
+
+  /* Lists */
+  ul,
+  ol,
+  dl {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+    ul,
+    ol,
+    dl {
+      padding-inline-start: 2ch;
+    }
+  }
+}

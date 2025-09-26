@@ -1,0 +1,113 @@
+/*
+ * Shadow - Overall
+ */
+@property --shadow-xs {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 0 5px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+@property --shadow-sm {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 0 7px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+@property --shadow-md {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 0 9px 0 hsla(25, 10%, 35%, 0.5);
+}
+@property --shadow-lg {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 0 11px 0 hsla(25, 10%, 35%, 0.5);
+}
+@property --shadow-xl {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 0 13px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+/*
+ * Shadow - Top
+ */
+@property --shadow-top-xs {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 -1px 5px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+@property --shadow-top-sm {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 -2px 7px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+@property --shadow-top-md {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 -3px 9px 0 hsla(25, 10%, 35%, 0.5);
+}
+@property --shadow-top-lg {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 -4px 11px 0 hsla(25, 10%, 35%, 0.5);
+}
+@property --shadow-top-xl {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 -5px 13px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+/*
+ * Shadow - Bottom
+ */
+@property --shadow-bottom-xs {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 1px 5px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+@property --shadow-bottom-sm {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 2px 7px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+@property --shadow-bottom-md {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 3px 9px 0 hsla(25, 10%, 35%, 0.5);
+}
+@property --shadow-bottom-lg {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 4px 11px 0 hsla(25, 10%, 35%, 0.5);
+}
+@property --shadow-bottom-xl {
+  syntax: <shadow>#;
+  inherits: false;
+  initial-value: 0 5px 13px 0 hsla(25, 10%, 35%, 0.5);
+}
+
+/* ********************************************************************************************* */
+/* Applying Values */
+/* ********************************************************************************************* */
+/* :root {
+  --shadow-xs: 0 0 5px 0 var(--color-shadow);
+  --shadow-sm: 0 0 7px 0 var(--color-shadow);
+  --shadow-md: 0 0 9px 0 var(--color-shadow);
+  --shadow-lg: 0 0 11px 0 var(--color-shadow);
+  --shadow-xl: 0 0 13px 0 var(--color-shadow);
+  --shadow-top-xs: 0 -1px 5px 0 var(--color-shadow);
+  --shadow-top-sm: 0 -2px 7px 0 var(--color-shadow);
+  --shadow-top-md: 0 -3px 9px 0 var(--color-shadow);
+  --shadow-top-lg: 0 -4px 11px 0 var(--color-shadow);
+  --shadow-top-xl: 0 -5px 13px 0 var(--color-shadow);
+  --shadow-bottom-xs: 0 1px 5px 0 var(--color-shadow);
+  --shadow-bottom-sm: 0 2px 7px 0 var(--color-shadow);
+  --shadow-bottom-md: 0 3px 9px 0 var(--color-shadow);
+  --shadow-bottom-lg: 0 4px 11px 0 var(--color-shadow);
+  --shadow-bottom-xl: 0 5px 13px 0 var(--color-shadow);
+} */

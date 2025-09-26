@@ -1,0 +1,66 @@
+:root {
+  /* XS - 500px */
+  --xs-down: false;
+  --xs-up: false;
+
+  @media (width <= 31.25rem) {
+    --xs-down: true;
+    --xs-up: false;
+  }
+  @media (width > 31.25rem) {
+    --xs-down: false;
+    --xs-up: true;
+  }
+
+  /* SM - 800px */
+  --sm-down: false;
+  --sm-up: false;
+
+  @media (width <= 50rem) {
+    --sm-down: true;
+    --sm-up: false;
+  }
+  @media (width > 50rem) {
+    --sm-down: false;
+    --sm-up: true;
+  }
+
+  /* MD - 1200px */
+  --md-down: false;
+  --md-up: false;
+
+  @media (width <= 75rem) {
+    --md-down: true;
+    --md-up: false;
+  }
+  @media (width > 75rem) {
+    --md-down: false;
+    --md-up: true;
+  }
+
+  /* LG - 1600px */
+  --lg-down: false;
+  --lg-up: false;
+
+  @media (width <= 100rem) {
+    --lg-down: true;
+    --lg-up: false;
+  }
+  @media (width > 100rem) {
+    --lg-down: false;
+    --lg-up: true;
+  }
+
+  /* XL - 2000px */
+  --xl-down: false;
+  --xl-up: false;
+
+  @media (width <= 125rem) {
+    --xl-down: true;
+    --xl-up: false;
+  }
+  @media (width > 125rem) {
+    --xl-down: false;
+    --xl-up: true;
+  }
+}

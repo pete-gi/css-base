@@ -1,0 +1,77 @@
+/*
+ * Border width
+ */
+@property --border-width {
+  syntax: <line-width>;
+  inherits: false;
+  initial-value: 1px;
+}
+
+@property --border-width-bold {
+  syntax: <line-width>;
+  inherits: false;
+  initial-value: 1px;
+}
+
+/*
+ * Border full style
+ */
+@property --border-solid {
+  syntax: <line-width> || <line-style> || <color>;
+  inherits: false;
+  initial-value: 1px solid transparent;
+}
+
+@property --border-dashed {
+  syntax: <line-width> || <line-style> || <color>;
+  inherits: false;
+  initial-value: 2px solid transparent;
+}
+
+/*
+ * Border radius
+ */
+ @property --border-radius-xs {
+   syntax: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?;
+   inherits: false;
+   initial-value: 0.2rem;
+ }
+
+ @property --border-radius-sm {
+   syntax: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?;
+   inherits: false;
+   initial-value: 0.4rem;
+ }
+
+ @property --border-radius-md {
+   syntax: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?;
+   inherits: false;
+   initial-value: 0.6rem;
+ }
+
+ @property --border-radius-lg {
+   syntax: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?;
+   inherits: false;
+   initial-value: 0.8rem;
+ }
+
+ @property --border-radius-xl {
+   syntax: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?;
+   inherits: false;
+   initial-value: 1rem;
+ }
+
+ @property --border-radius-circle {
+   syntax: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?;
+   inherits: false;
+   initial-value: 50%;
+ }
+
+/* ********************************************************************************************* */
+/* Applying Values */
+/* ********************************************************************************************* */
+
+:root {
+  --border-solid: var(--border-width) solid var(--transparent);
+  --border-dashed: var(--border-width-bold) dashed var(--color-secondary);
+}

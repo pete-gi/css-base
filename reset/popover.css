@@ -1,0 +1,29 @@
+@layer petegi-reset {
+  /* Enable transitions, allow-discrete, define timing */
+  [popover],
+  dialog,
+  ::backdrop {
+    transition: display var(--duration-md) allow-discrete,
+      overlay var(--duration-md) allow-discrete, opacity var(--duration-md);
+    opacity: 0;
+  }
+
+  /* Visible */
+  :popover-open,
+  :popover-open::backdrop,
+  [open],
+  [open]::backdrop {
+    opacity: 1;
+  }
+
+  /* Before visible */
+  /* starting-style for pre-positioning (enter stage from here) */
+  @starting-style {
+    :popover-open,
+    :popover-open::backdrop,
+    [open],
+    [open]::backdrop {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+/* 
+ * Size - Xs
+ */
+@property --size-xs {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.25rem;
+}
+
+/* 
+ * Size - Sm
+ */
+@property --size-sm {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.5rem;
+}
+
+/* 
+ * Size - Md
+ */
+@property --size-md {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 1rem;
+}
+
+/* 
+ * Size - Lg
+ */
+@property --size-lg {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 2rem;
+}
+
+/* 
+ * Size - Xl
+ */
+@property --size-xl {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 3rem;
+}
+
+/* 
+ * Size - 2xl
+ */
+@property --size-2xl {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 4rem;
+}
+
+/* 
+ * Size - 3xl
+ */
+@property --size-3xl {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 5rem;
+}

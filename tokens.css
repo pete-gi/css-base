@@ -1,0 +1,7 @@
+@import "./tokens/color.css";
+@import "./tokens/border.css";
+@import "./tokens/shadow.css";
+@import "./tokens/font.css";
+@import "./tokens/size.css";
+@import "./tokens/spacing.css";
+@import "./tokens/duration.css";

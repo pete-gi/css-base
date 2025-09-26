@@ -1,0 +1,40 @@
+@property --space-xxs {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.25rem;
+}
+@property --space-xs {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.5rem;
+}
+
+@property --space-sm {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 0.75rem;
+}
+
+@property --space-md {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 1rem;
+}
+
+@property --space-lg {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 1.5rem;
+}
+
+@property --space-xl {
+  syntax: <length>;
+  inherits: false;
+  initial-value: 2rem;
+}
+
+@property --space-auto {
+  syntax: <length>;
+  inherits: false;
+  initial-value: auto;
+}

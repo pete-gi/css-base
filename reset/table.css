@@ -1,0 +1,21 @@
+@layer petegi-reset {
+  table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    td {
+      font-size: 90%;
+    }
+    td,
+    th {
+      word-break: normal;
+      border: 1px solid gray;
+      padding: 0.5rem;
+    }
+  }
+  [role="region"][aria-labelledby][tabindex] {
+    overflow: auto;
+  }
+  caption {
+    font-size: 90%;
+  }
+}
